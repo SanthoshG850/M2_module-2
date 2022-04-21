@@ -1,0 +1,26 @@
+In this chapter, the design and implementation of sun tracking solar system is discussed. 
+This project's main goal is to create a high-quality sun tracking solar system. There are two aspects to the project: hardware and software. It is made up of three primary components: inputs, main controller, and output, as indicated.
+Software implementation
+In this chapter, the design and development of algorithm of program logic is discussed. The flowchart to develop the program logic with the program implementation is also being discussed. 
+The sun tracking system is based on the Light Dependant Resistor theory (LDR). As illustrated in Fig 2.4, Four LDR are linked to Arduino analogue pin A0 to A4, which serves as the system's input. LDR's analogue value will be converted to digital using the built-in Analog-to-Digital Converter (Pulse Width Modulation). The servos are moved using the PWM pulse values. The servo motor will move the solar panel to the position of the LDR that was set-up in the programming based on the greatest light intensity obtained by one of the LDRs input.
+There are three motor rotation points: 0, 90, and I80.
+The pseudo code is explained below
+
+Pseudo Code:
+Step 1:Start
+Step 2:Initialize LDR 1,2,3,4
+Step 3:Checks the Value Difference of LDR
+Step 4:Check the condition
+             If LDR1 is greater than LDR 2,3,4 then the Servo motor turns Right
+Step 5:Checks the condition
+             If LDR2 is greater than LDR 1,3,4 then the Servo motor turns Left
+
+Step 6:Checks the condition
+             If LDR3 is greater than LDR 1,2,4 then the Servo motor go up
+
+Step 7:Checks the condition
+             If LDR4 is greater than LDR 1,2,3  the the Servo motor turns Right
+Step 8:if It is Dark
+            Then goto step 3
+Step 9:END
+
