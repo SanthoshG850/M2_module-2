@@ -1,1 +1,1 @@
-# M2_module-2
+# Dual Axis Sun Tracking System
