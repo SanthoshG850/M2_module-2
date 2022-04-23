@@ -1,1 +1,7 @@
 Dual Axis Sun Tracking System
+By using simulide we have simulated dual axis sun tracking system
+Here we have two servo motors i.e Horizontal and Vertical servo motor
+And 4 LDR to control the servo motor and a potientio meter to have a variable resistance.
+During simulation, the LDR knob is varied so the we can see the changes in the servo motor.
+The principle behind the working is that as the light intensity is increasing the solar panel mounted to the servo motor is rotated, using LDR as the sensors.
+So by changing the intensity of the light in simululting by the LDR knob we can vary the servo motor angles.
